@@ -354,13 +354,20 @@ function question19(number) {
     if (number % 7 === 0) {
         output += "Stefano "
     }
-    return output
+    if (output === '') {
+        return number;
+    } else {
+        return output
+
+    }
 }
 // console.log(question19(100))
 // console.log(question19(30))
 // console.log(question19(99))
 // console.log(question19(55))
 // console.log(question19(11))
+// console.log(question19(9))
+// console.log(question19(21))
 /*
 /
 20)
@@ -373,7 +380,7 @@ function question20(str) {
     for (let i = 0; i < arrString.length; i++) {
         acronym += arrString[i][0]
     }
-    return acronym;
+    return acronym.toUpperCase();
     
 }
 
